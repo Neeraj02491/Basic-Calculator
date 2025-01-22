@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic Calculator</h2>
+    <input type="number" id="Num1" placeholder="Enter Number"><br><br>
+    <input type="number" id="Num2" placeholder="Enter Number"><br><br>
+    <hr>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">x</button>
+    <button onclick="div()">/</button>
+
+    <script>
+        function add(){
+            let a=parseInt(Num1.value);
+            let b=parseInt(Num2.value);
+            let add=a+b;
+            alert(add);
+        }
+     
+         function sub() {
+            let a=parseInt(Num1.value);
+            let b=parseInt(Num2.value);
+            let sub=a-b;
+            alert(sub);
+        }
+        function mult(){
+            let a=parseInt(Num1.value);
+            let b=parseInt(Num2.value);
+            let mult=a*b;
+            alert(mult);
+        }
+
+        function div(){
+            let a=parseInt(Num1.value);
+            let b=parseInt(Num2.value);
+            let div=a/b;
+            alert(div);
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
